@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #f1f5f8;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.title h1{
+    font-size: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: .2rem;
+    margin-bottom: 10px;
+    color: #102a42;
+}
+
+.title .underline{
+    content: "";
+    width: 80px;
+    display: block;
+    border-bottom: 4px solid #49a6e9;
+}
+
+
+section{
+    width: 50%;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 100;
+}
+
+img{   
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.img::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: hsl(205, 78%, 60%);
+    position: absolute;
+    top: -0.25rem;
+    right: -0.5rem;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.card h4{
+    letter-spacing: .2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 5px;
+    color: #102a42;
+}
+
+.card p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
+    color: hsl(205, 78%, 60%);
+}
+
+.card span{
+    width: 90%;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 15px;
+    color: hsl(220, 35%, 54%);
+}
+
+
+.prevNext {
+    width: 15%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.prevNext button{
+    width: 50%;
+    border: none;
+    background: transparent;
+    font-size: 2rem;
+    color: hsl(205, 78%, 60%);
+    cursor: pointer;
+}
+
+.prevNext button:hover{
+    color: hsl(205, 55%, 51%);
+}
+
+.surprise{
+    background-color: hsl(205, 100%, 96%);
+    border: 1px solid hsl(205, 78%, 60%);
+    padding: 5px;
+    color: hsl(205, 78%, 60%);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.surprise:hover{
+    background-color: hsl(205, 78%, 60%);
+    color: hsl(205, 86%, 17%);
+}
+
