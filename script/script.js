@@ -41,19 +41,19 @@ const nextPerson = document.querySelector('.next');
 const prevPerson = document.querySelector('.prev');
 const surprisePerson = document.querySelector('.surprise');
 
-let i = 1;
-let d = 3;
+let i = 0;
 
 function nextReview() {
     nextPerson.addEventListener('click', handleNext)
 }
 
 function handleNext() {
+  i++
     if(i >= 4){
         i = 0
     }
     if (i <= 3) {
-     reviewsHtml(i++)
+     reviewsHtml(i)
     }   
 }
 
@@ -62,11 +62,12 @@ function prevReview() {
 }
 
 function handlePrev() {
-    if(d < 0){
-        d = 3
+    i--
+    if(i < 0){
+        i = 3
     }
-    if (d >= 0) {
-        reviewsHtml(d--)
+    if (i >= 0) {
+        reviewsHtml(i)
     }   
 }
 
